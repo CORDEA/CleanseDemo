@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CAD21C5541600D189DF /* RxSwift.framework */; };
 		4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4699508921C4DC91004B37B8 /* Cleanse.framework */; };
 		4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4699509021C52A31004B37B8 /* LoginViewController.xib */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		466C9CAD21C5541600D189DF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		4699508921C4DC91004B37B8 /* Cleanse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cleanse.framework; path = Carthage/Build/iOS/Cleanse.framework; sourceTree = "<group>"; };
 		4699509021C52A31004B37B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AF4140BCE2FF1CEF0A283900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */,
 				4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +91,7 @@
 		4699508821C4DC90004B37B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				466C9CAD21C5541600D189DF /* RxSwift.framework */,
 				4699508921C4DC91004B37B8 /* Cleanse.framework */,
 			);
 			name = Frameworks;
@@ -270,11 +274,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cleanse.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cleanse.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
