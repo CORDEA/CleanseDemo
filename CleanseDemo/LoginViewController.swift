@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  CleanseDemo
 //
 //  Created by Yoshihiro Tanaka on 2018-12-15.
@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import Cleanse
 
-
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
