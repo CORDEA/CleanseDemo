@@ -4,12 +4,13 @@
 //
 
 import RxSwift
+import RxCocoa
 
 protocol BaseDispatcher: BaseSource, BaseSink {
 }
 
 protocol BaseSource: BaseElement {
-    var reader: Observable<Element> { get }
+    var reader: Signal<Element> { get }
 }
 
 protocol BaseSink: BaseElement {

@@ -9,12 +9,12 @@ import RxCocoa
 class LoginDispatcher: BaseDispatcher {
     typealias Element = LoginAction
 
-    private let _reader = PublishSubject<LoginAction>()
-    var reader: Observable<LoginAction> {
-        return _reader.asObservable()()
+    private let _reader = PublishRelay<LoginAction>()
+    var reader: Signal<LoginAction> {
+        return _reader.asSignal()
     }
 
     func dispatch(action: LoginAction) {
-        _reader.onNext(action)
+        _reader.accept(action)
     }
 }
