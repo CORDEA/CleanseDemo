@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4699508921C4DC91004B37B8 /* Cleanse.framework */; };
+		4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4699509021C52A31004B37B8 /* LoginViewController.xib */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
 		AF4146C4318FF8F9889349C8 /* CleanseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414FD24DD7595463A8F5DD /* CleanseDemoUITests.swift */; };
 		AF4148F11B5A5B916215C3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF414571F5D3E9A02AF4334A /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4699508921C4DC91004B37B8 /* Cleanse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cleanse.framework; path = Carthage/Build/iOS/Cleanse.framework; sourceTree = "<group>"; };
+		4699509021C52A31004B37B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AF4140BCE2FF1CEF0A283900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		AF414338756A8C3F820A2BDF /* CleanseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF414555CD121923116D995C /* CleanseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanseDemoTests.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */,
 				AF414A2180991897B4D3B8A0 /* SingletonScope.swift */,
 				AF414EA47D11001C63CB120C /* UIKitModule.swift */,
+				4699509021C52A31004B37B8 /* LoginViewController.xib */,
 			);
 			path = CleanseDemo;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				AF4148F11B5A5B916215C3EC /* Assets.xcassets in Resources */,
 				AF414A7BEED8A42B3BEE4919 /* LaunchScreen.storyboard in Resources */,
+				4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
