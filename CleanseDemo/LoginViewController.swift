@@ -11,9 +11,14 @@ import Cleanse
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func onClick(_ sender: UIButton) {
     }
 
     struct Module: Cleanse.Module {

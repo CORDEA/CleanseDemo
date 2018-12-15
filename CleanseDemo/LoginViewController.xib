@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="CleanseDemo" customModuleProvider="target">
             <connections>
+                <outlet property="textField" destination="PUy-0X-cbI" id="UQZ-a3-58a"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Br3-D7-GPl"/>
             </connections>
         </placeholder>
@@ -35,6 +36,9 @@
                         <constraint firstAttribute="height" constant="50" id="1p7-jm-YSQ"/>
                     </constraints>
                     <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="JIg-lO-YZ8"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZe-3S-Awx">
                     <rect key="frame" x="24" y="281.5" width="59" height="21"/>
