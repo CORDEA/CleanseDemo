@@ -7,8 +7,10 @@ import Cleanse
 
 struct AppComponent: Cleanse.RootComponent {
     typealias Root = PropertyInjector<AppDelegate>
+    typealias Scope = Singleton
 
-    static func configure(binder: Binder<Unscoped>) {
+    static func configure(binder: SingletonBinder) {
+        binder.include(module: CoreAppModule.self)
     }
 
     static func configureRoot(binder bind: ReceiptBinder<Root>) -> BindingReceipt<Root> {

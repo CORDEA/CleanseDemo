@@ -6,6 +6,7 @@
 import Cleanse
 
 struct CoreAppModule: Cleanse.Module {
-    static func configure(binder: Binder<Unscoped>) {
+    static func configure(binder: SingletonBinder) {
+        binder.include(module: UIKitModule.self)
     }
 }
