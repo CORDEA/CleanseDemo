@@ -15,6 +15,7 @@
 		AF4148F11B5A5B916215C3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF414571F5D3E9A02AF4334A /* Assets.xcassets */; };
 		AF41495B61EEC752466FCDD0 /* BaseDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414C977D97B5AE48F56154 /* BaseDispatcher.swift */; };
 		AF41497B6855253F83C5EC02 /* UIKitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414EA47D11001C63CB120C /* UIKitModule.swift */; };
+		AF4149B0B401F347F5C7DC4A /* LoginDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */; };
 		AF414A62C357B012AC9A3CED /* CleanseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414555CD121923116D995C /* CleanseDemoTests.swift */; };
 		AF414A7BEED8A42B3BEE4919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF414C081187134E0DE2C9CD /* LaunchScreen.storyboard */; };
 		AF414A84F3F442D8337A45CC /* SingletonScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414A2180991897B4D3B8A0 /* SingletonScope.swift */; };
@@ -53,6 +54,7 @@
 		AF4146EB580B804042A44649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4147F755EA35460E54316A /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		AF414A2180991897B4D3B8A0 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
+		AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDispatcher.swift; sourceTree = "<group>"; };
 		AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAppModule.swift; sourceTree = "<group>"; };
 		AF414C961510733651401C53 /* CleanseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF414C977D97B5AE48F56154 /* BaseDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDispatcher.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				AF41426AB51E38B2BCE942A9 /* LoginAction.swift */,
+				AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				AF41497B6855253F83C5EC02 /* UIKitModule.swift in Sources */,
 				AF41495B61EEC752466FCDD0 /* BaseDispatcher.swift in Sources */,
 				AF414FDFD8E2A9E6508B91CF /* LoginAction.swift in Sources */,
+				AF4149B0B401F347F5C7DC4A /* LoginDispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
