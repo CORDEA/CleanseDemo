@@ -16,5 +16,13 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    struct Module: Cleanse.Module {
+        static func configure(binder: Binder<Unscoped>) {
+            binder.bind(LoginViewController.self).to(factory: LoginViewController.init)
 
+            binder.bind().tagged(with: UIViewController.Root.self).to { (root: LoginViewController) in
+                root
+            }
+        }
+    }
 }

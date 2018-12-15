@@ -8,5 +8,6 @@ import Cleanse
 struct CoreAppModule: Cleanse.Module {
     static func configure(binder: SingletonBinder) {
         binder.include(module: UIKitModule.self)
+        binder.include(module: LoginViewController.Module.self)
     }
 }
