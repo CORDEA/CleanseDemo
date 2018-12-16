@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 import Cleanse
 
 class LoginViewController: UIViewController {
@@ -15,6 +16,7 @@ class LoginViewController: UIViewController {
 
     private let creator: LoginActionCreator
     private let store: LoginStore
+    private let disposeBag = DisposeBag()
 
     init(creator: LoginActionCreator, store: LoginStore) {
         self.creator = creator
@@ -29,15 +31,23 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        store.onResult()
+                .subscribe(onNext: render)
+                .disposed(by: disposeBag)
     }
 
     @IBAction func onClick(_ sender: UIButton) {
     }
 
+    private func render(result: LoginResult) {
+    }
+
     struct Module: Cleanse.Module {
-        static func configure(binder: Binder<Unscoped>) {
-            binder.bind().to(factory: LoginDispatcher.init)
+        // TODO: Should use the view controller scope.
+        static func configure(binder: SingletonBinder) {
+            binder.bind()
+                    .sharedInScope()
+                    .to(factory: LoginDispatcher.init)
             binder.bind().to(factory: { (dispatcher: LoginDispatcher) in
                 LoginActionCreator(sink: dispatcher)
             })
@@ -45,8 +55,7 @@ class LoginViewController: UIViewController {
                 LoginStore(source: dispatcher)
             })
 
-            binder.bind(LoginViewController.self).to(factory: LoginViewController.init)
-
+            binder.bind().to(factory: LoginViewController.init)
             binder.bind().tagged(with: UIViewController.Root.self).to { (root: LoginViewController) in
                 root
             }
