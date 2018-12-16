@@ -3,7 +3,7 @@
 // Copyright (c) 2018 Yoshihiro Tanaka. All rights reserved.
 //
 
-struct LoginActionCreator {
+class LoginActionCreator {
     private let action: (LoginAction) -> ()
 
     init<T: BaseSink>(sink: T) where LoginAction == T.Element {
