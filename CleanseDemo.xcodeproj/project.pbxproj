@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CAD21C5541600D189DF /* RxSwift.framework */; };
 		466C9CB021C618B900D189DF /* LoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C9CAF21C618B900D189DF /* LoginStore.swift */; };
+		466C9CB221C61BFB00D189DF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CB121C61BFB00D189DF /* RxCocoa.framework */; };
 		4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4699508921C4DC91004B37B8 /* Cleanse.framework */; };
 		4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4699509021C52A31004B37B8 /* LoginViewController.xib */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		466C9CAD21C5541600D189DF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		466C9CAF21C618B900D189DF /* LoginStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
+		466C9CB121C61BFB00D189DF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4699508921C4DC91004B37B8 /* Cleanse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cleanse.framework; path = Carthage/Build/iOS/Cleanse.framework; sourceTree = "<group>"; };
 		4699509021C52A31004B37B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginActionCreator.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466C9CB221C61BFB00D189DF /* RxCocoa.framework in Frameworks */,
 				466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */,
 				4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */,
 			);
@@ -103,6 +106,7 @@
 		4699508821C4DC90004B37B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				466C9CB121C61BFB00D189DF /* RxCocoa.framework */,
 				466C9CAD21C5541600D189DF /* RxSwift.framework */,
 				4699508921C4DC91004B37B8 /* Cleanse.framework */,
 			);
@@ -301,12 +305,14 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cleanse.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cleanse.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
