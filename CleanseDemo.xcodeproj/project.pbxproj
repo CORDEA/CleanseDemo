@@ -23,6 +23,7 @@
 		AF414C7CD525147B72D15518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414F011A484663C660609D /* LoginViewController.swift */; };
 		AF414CB765313A1B11D2EA0F /* CoreAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */; };
 		AF414F10D8F65EF8FCADD7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CCC0B50062CD2A9CAA6 /* AppDelegate.swift */; };
+		AF414F787FED064DBFF1EF29 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41419363C717C6AC17035D /* LoginResult.swift */; };
 		AF414FDFD8E2A9E6508B91CF /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41426AB51E38B2BCE942A9 /* LoginAction.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		4699509021C52A31004B37B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginActionCreator.swift; sourceTree = "<group>"; };
 		AF4140BCE2FF1CEF0A283900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AF41419363C717C6AC17035D /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		AF41426AB51E38B2BCE942A9 /* LoginAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
 		AF414338756A8C3F820A2BDF /* CleanseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF414555CD121923116D995C /* CleanseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanseDemoTests.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				AF41426AB51E38B2BCE942A9 /* LoginAction.swift */,
 				AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */,
 				AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */,
+				AF41419363C717C6AC17035D /* LoginResult.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				AF414FDFD8E2A9E6508B91CF /* LoginAction.swift in Sources */,
 				AF4149B0B401F347F5C7DC4A /* LoginDispatcher.swift in Sources */,
 				AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */,
+				AF414F787FED064DBFF1EF29 /* LoginResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
