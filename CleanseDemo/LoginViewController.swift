@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onClick(_ sender: UIButton) {
+        creator.login(key: textField.text ?? "")
     }
 
     private func render(result: LoginResult) {
