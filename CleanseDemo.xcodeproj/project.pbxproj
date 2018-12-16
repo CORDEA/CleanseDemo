@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CAD21C5541600D189DF /* RxSwift.framework */; };
+		466C9CB021C618B900D189DF /* LoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C9CAF21C618B900D189DF /* LoginStore.swift */; };
 		4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4699508921C4DC91004B37B8 /* Cleanse.framework */; };
 		4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4699509021C52A31004B37B8 /* LoginViewController.xib */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		466C9CAD21C5541600D189DF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		466C9CAF21C618B900D189DF /* LoginStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
 		4699508921C4DC91004B37B8 /* Cleanse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cleanse.framework; path = Carthage/Build/iOS/Cleanse.framework; sourceTree = "<group>"; };
 		4699509021C52A31004B37B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginActionCreator.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		AF4147E04ACF0B307FAC1C0E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				466C9CAF21C618B900D189DF /* LoginStore.swift */,
 				AF41426AB51E38B2BCE942A9 /* LoginAction.swift */,
 				AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */,
 				AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */,
@@ -329,6 +332,7 @@
 				AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */,
 				AF414CB765313A1B11D2EA0F /* CoreAppModule.swift in Sources */,
 				AF414A84F3F442D8337A45CC /* SingletonScope.swift in Sources */,
+				466C9CB021C618B900D189DF /* LoginStore.swift in Sources */,
 				AF41497B6855253F83C5EC02 /* UIKitModule.swift in Sources */,
 				AF41495B61EEC752466FCDD0 /* BaseDispatcher.swift in Sources */,
 				AF414FDFD8E2A9E6508B91CF /* LoginAction.swift in Sources */,
