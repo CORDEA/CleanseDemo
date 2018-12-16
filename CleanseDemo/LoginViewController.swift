@@ -13,6 +13,7 @@ import Cleanse
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
 
     private let creator: LoginActionCreator
     private let store: LoginStore
@@ -32,8 +33,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         store.onResult()
-                .subscribe(onNext: render)
+                .subscribe(onNext: { [unowned self] in self.render(result: $0) })
                 .disposed(by: disposeBag)
+
+        errorLabel.isHidden = true
     }
 
     @IBAction func onClick(_ sender: UIButton) {
@@ -41,6 +44,13 @@ class LoginViewController: UIViewController {
     }
 
     private func render(result: LoginResult) {
+        switch result {
+        case .success:
+            errorLabel.isHidden = true
+            break
+        case .failure:
+            errorLabel.isHidden = false
+        }
     }
 
     struct Module: Cleanse.Module {
