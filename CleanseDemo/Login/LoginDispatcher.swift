@@ -10,9 +10,7 @@ class LoginDispatcher: BaseDispatcher {
     typealias Element = LoginAction
 
     private let _reader = PublishRelay<LoginAction>()
-    var reader: Signal<LoginAction> {
-        return _reader.asSignal()
-    }
+    lazy var reader: Signal<LoginAction> = _reader.asSignal()
 
     func dispatch(action: LoginAction) {
         _reader.accept(action)

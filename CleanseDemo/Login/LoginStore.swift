@@ -3,6 +3,7 @@
 // Copyright (c) 2018 Yoshihiro Tanaka. All rights reserved.
 //
 
+import RxSwift
 import RxCocoa
 
 class LoginStore {
@@ -12,7 +13,7 @@ class LoginStore {
         reader = source.reader
     }
 
-    func onResult() -> Signal<LoginResult> {
+    func onResult() -> Observable<LoginResult> {
         return reader.map { action -> LoginResult in
             switch action {
             case .login(key: ""):
@@ -20,6 +21,6 @@ class LoginStore {
             case .login(key: _):
                 return .success
             }
-        }
+        }.asObservable()
     }
 }
