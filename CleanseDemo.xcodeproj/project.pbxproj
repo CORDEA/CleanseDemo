@@ -12,6 +12,7 @@
 		466C9CB221C61BFB00D189DF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CB121C61BFB00D189DF /* RxCocoa.framework */; };
 		4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4699508921C4DC91004B37B8 /* Cleanse.framework */; };
 		4699509121C52A31004B37B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4699509021C52A31004B37B8 /* LoginViewController.xib */; };
+		AF41430A7022E2772B817E07 /* ViewControllerScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CF2F52A83D0C8F39056 /* ViewControllerScope.swift */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
 		AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */; };
 		AF4146C4318FF8F9889349C8 /* CleanseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414FD24DD7595463A8F5DD /* CleanseDemoUITests.swift */; };
@@ -69,6 +70,7 @@
 		AF414CC9C9C668C766CA7ED3 /* CleanseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF414CCC0B50062CD2A9CAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF414CECA3D6FF9B56ED891B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AF414CF2F52A83D0C8F39056 /* ViewControllerScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerScope.swift; sourceTree = "<group>"; };
 		AF414DBDBF7B1B5B8AC0403A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		AF414EA47D11001C63CB120C /* UIKitModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitModule.swift; sourceTree = "<group>"; };
 		AF414F011A484663C660609D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				4699509021C52A31004B37B8 /* LoginViewController.xib */,
 				AF414C977D97B5AE48F56154 /* BaseDispatcher.swift */,
 				AF4147E04ACF0B307FAC1C0E /* Login */,
+				AF414CF2F52A83D0C8F39056 /* ViewControllerScope.swift */,
 			);
 			path = CleanseDemo;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				AF4149B0B401F347F5C7DC4A /* LoginDispatcher.swift in Sources */,
 				AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */,
 				AF414F787FED064DBFF1EF29 /* LoginResult.swift in Sources */,
+				AF41430A7022E2772B817E07 /* ViewControllerScope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
