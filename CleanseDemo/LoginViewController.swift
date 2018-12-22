@@ -17,11 +17,13 @@ class LoginViewController: UIViewController {
 
     private let creator: LoginActionCreator
     private let store: LoginStore
+    private let navigator: LoginNavigator
     private let disposeBag = DisposeBag()
 
-    init(creator: LoginActionCreator, store: LoginStore) {
+    init(creator: LoginActionCreator, store: LoginStore, navigator: LoginNavigator) {
         self.creator = creator
         self.store = store
+        self.navigator = navigator
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -47,6 +49,7 @@ class LoginViewController: UIViewController {
         switch result {
         case .success:
             errorLabel.isHidden = true
+            navigator.navigateToMain()
             break
         case .failure:
             errorLabel.isHidden = false
@@ -65,6 +68,7 @@ class LoginViewController: UIViewController {
             binder.bind().to(factory: { (dispatcher: LoginDispatcher) in
                 LoginStore(source: dispatcher)
             })
+            binder.bind().to(factory: LoginNavigator.init)
 
             binder.bind().to(factory: LoginViewController.init)
             binder.bind().tagged(with: UIViewController.Root.self).to { (root: LoginViewController) in
