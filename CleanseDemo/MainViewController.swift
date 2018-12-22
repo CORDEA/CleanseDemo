@@ -10,7 +10,10 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    init() {
+    private let dataSource: MainTableViewDataSource
+
+    init(dataSource: MainTableViewDataSource) {
+        self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -21,10 +24,14 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.dataSource = dataSource
     }
 
     struct Module: Cleanse.Module {
         static func configure(binder: Binder<Unscoped>) {
+            binder.include(module: MainTableViewDataSource.Module.self)
+
             binder.bind().to(factory: MainViewController.init)
             binder.bind().tagged(with: UINavigationController.Root.self).to { (root: MainViewController) in
                 UINavigationController(rootViewController: root)
