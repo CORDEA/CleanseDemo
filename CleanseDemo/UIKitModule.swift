@@ -26,10 +26,13 @@ extension UIScreen {
 extension UIWindow {
     public struct Module: Cleanse.Module {
         public static func configure(binder: Binder<Singleton>) {
-            binder.bind(UIWindow.self).to { (rootViewController: TaggedProvider<UIViewController.Root>, screen: UIScreen) in
+            binder.bind(UIWindow.self).to { (viewController: TaggedProvider<UIViewController.Root>, screen: UIScreen) in
                 let window = UIWindow(frame: screen.bounds)
-                window.rootViewController = rootViewController.get()
+                window.rootViewController = UINavigationController(rootViewController: viewController.get())
                 return window
+            }
+            binder.bind(UINavigationController.self).to {
+                UIApplication.shared.keyWindow!.rootViewController as! UINavigationController
             }
         }
     }
