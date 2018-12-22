@@ -65,8 +65,8 @@ class LoginViewController: UIViewController {
             binder.bind().to(factory: { (dispatcher: LoginDispatcher) in
                 LoginActionCreator(sink: dispatcher)
             })
-            binder.bind().to(factory: { (dispatcher: LoginDispatcher) in
-                LoginStore(source: dispatcher)
+            binder.bind().to(factory: { (dispatcher: LoginDispatcher, defaults: UserDefaults) in
+                LoginStore(source: dispatcher, userDefaults: defaults)
             })
             binder.bind().to(factory: LoginNavigator.init)
 

@@ -8,17 +8,20 @@ import RxCocoa
 
 class LoginStore {
     private let reader: Signal<LoginAction>
+    private let userDefaults: UserDefaults
 
-    init<T: BaseSource>(source: T) where LoginAction == T.Element {
+    init<T: BaseSource>(source: T, userDefaults: UserDefaults) where LoginAction == T.Element {
         reader = source.reader
+        self.userDefaults = userDefaults
     }
 
     func onResult() -> Observable<LoginResult> {
-        return reader.map { action -> LoginResult in
+        return reader.map { [unowned self] action -> LoginResult in
             switch action {
             case .login(key: ""):
                 return .failure
-            case .login(key: _):
+            case .login(key: let key):
+                self.userDefaults.set(key, forKey: UserDefaults.apiKeyDefaultsKey)
                 return .success
             }
         }.asObservable()
