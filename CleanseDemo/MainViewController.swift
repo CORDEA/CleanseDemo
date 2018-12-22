@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import Cleanse
 
 class MainViewController: UIViewController {
 
@@ -18,5 +19,20 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    struct Module: Cleanse.Module {
+        static func configure(binder: Binder<Unscoped>) {
+            binder.bind().to(factory: MainViewController.init)
+            binder.bind().tagged(with: UIViewController.Main.self).to { (root: MainViewController) in
+                root
+            }
+        }
+    }
+}
+
+extension UIViewController {
+    struct Main: Cleanse.Tag {
+        typealias Element = UIViewController
     }
 }

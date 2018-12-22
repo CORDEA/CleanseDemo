@@ -9,5 +9,6 @@ struct CoreAppModule: Cleanse.Module {
     static func configure(binder: SingletonBinder) {
         binder.include(module: UIKitModule.self)
         binder.include(module: LoginViewController.Module.self)
+        binder.include(module: MainViewController.Module.self)
     }
 }
