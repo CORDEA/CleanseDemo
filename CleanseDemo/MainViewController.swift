@@ -8,6 +8,8 @@ import Cleanse
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }
