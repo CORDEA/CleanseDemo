@@ -7,16 +7,15 @@ import UIKit
 import Cleanse
 
 class LoginNavigator {
-    private let _navigationController: Provider<UINavigationController>
-    private lazy var navigationController: UINavigationController = _navigationController.get()
-    private let viewController: TaggedProvider<UIViewController.Main>
+    private let window: UIWindow
+    private let navigation: TaggedProvider<UINavigationController.Root>
 
-    init(navigationController: Provider<UINavigationController>, viewController: TaggedProvider<UIViewController.Main>) {
-        _navigationController = navigationController
-        self.viewController = viewController
+    init(window: UIWindow, navigation: TaggedProvider<UINavigationController.Root>) {
+        self.window = window
+        self.navigation = navigation
     }
 
     func navigateToMain() {
-        navigationController.pushViewController(viewController.get(), animated: true)
+        window.rootViewController = navigation.get()
     }
 }

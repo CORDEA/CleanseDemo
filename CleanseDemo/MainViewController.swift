@@ -24,15 +24,15 @@ class MainViewController: UIViewController {
     struct Module: Cleanse.Module {
         static func configure(binder: Binder<Unscoped>) {
             binder.bind().to(factory: MainViewController.init)
-            binder.bind().tagged(with: UIViewController.Main.self).to { (root: MainViewController) in
-                root
+            binder.bind().tagged(with: UINavigationController.Root.self).to { (root: MainViewController) in
+                UINavigationController(rootViewController: root)
             }
         }
     }
 }
 
-extension UIViewController {
-    struct Main: Cleanse.Tag {
-        typealias Element = UIViewController
+extension UINavigationController {
+    struct Root: Cleanse.Tag {
+        typealias Element = UINavigationController
     }
 }
