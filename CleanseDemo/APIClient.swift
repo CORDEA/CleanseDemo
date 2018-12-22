@@ -16,4 +16,8 @@ class APIClient {
             "API-Key": apiKey.get()
         ]
     }
+
+    func getRegions() -> DataRequest {
+        return request(APIClient.baseUrl.appendingPathComponent("/regions/list"), method: .get, headers: headers)
+    }
 }
