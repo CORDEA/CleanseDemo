@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func injectProperties(_ window: UIWindow, _ viewController: TaggedProvider<UIViewController.Root>) {
+    func injectProperties(_ window: UIWindow, _ viewController: TaggedProvider<UIViewController.Login>) {
         self.window = window
         self.viewController = viewController.get()
     }

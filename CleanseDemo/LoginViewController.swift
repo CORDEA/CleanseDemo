@@ -71,9 +71,15 @@ class LoginViewController: UIViewController {
             binder.bind().to(factory: LoginNavigator.init)
 
             binder.bind().to(factory: LoginViewController.init)
-            binder.bind().tagged(with: UIViewController.Root.self).to { (root: LoginViewController) in
-                root
+            binder.bind().tagged(with: UIViewController.Login.self).to { (viewController: LoginViewController) in
+                viewController
             }
         }
+    }
+}
+
+extension UIViewController {
+    public struct Login: Tag {
+        public typealias Element = UIViewController
     }
 }

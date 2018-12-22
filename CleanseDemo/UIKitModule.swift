@@ -35,9 +35,3 @@ extension UIWindow {
         }
     }
 }
-
-extension UIViewController {
-    public struct Root: Tag {
-        public typealias Element = UIViewController
-    }
-}
