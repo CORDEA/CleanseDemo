@@ -6,6 +6,7 @@
 import Cleanse
 
 struct RepositoryModule: Module {
-    static func configure(binder: Binder<Unscoped>) {
+    static func configure(binder: SingletonBinder) {
+        binder.include(module: MainRepository.Module.self)
     }
 }
