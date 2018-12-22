@@ -18,6 +18,7 @@
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
 		AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */; };
 		AF4146C4318FF8F9889349C8 /* CleanseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414FD24DD7595463A8F5DD /* CleanseDemoUITests.swift */; };
+		AF41485228C6BBC18F6AEC90 /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414BC85FAEEEE92B70B916 /* LoginNavigator.swift */; };
 		AF4148F11B5A5B916215C3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF414571F5D3E9A02AF4334A /* Assets.xcassets */; };
 		AF41495B61EEC752466FCDD0 /* BaseDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414C977D97B5AE48F56154 /* BaseDispatcher.swift */; };
 		AF41497B6855253F83C5EC02 /* UIKitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414EA47D11001C63CB120C /* UIKitModule.swift */; };
@@ -68,6 +69,7 @@
 		AF414A2180991897B4D3B8A0 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
 		AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDispatcher.swift; sourceTree = "<group>"; };
 		AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAppModule.swift; sourceTree = "<group>"; };
+		AF414BC85FAEEEE92B70B916 /* LoginNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
 		AF414C961510733651401C53 /* CleanseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF414C977D97B5AE48F56154 /* BaseDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDispatcher.swift; sourceTree = "<group>"; };
 		AF414CC9C9C668C766CA7ED3 /* CleanseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */,
 				AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */,
 				AF41419363C717C6AC17035D /* LoginResult.swift */,
+				AF414BC85FAEEEE92B70B916 /* LoginNavigator.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				AF414F787FED064DBFF1EF29 /* LoginResult.swift in Sources */,
 				AF41430A7022E2772B817E07 /* ViewControllerScope.swift in Sources */,
 				AF414592DBF4D44CCABDFD74 /* MainViewController.swift in Sources */,
+				AF41485228C6BBC18F6AEC90 /* LoginNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
