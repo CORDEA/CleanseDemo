@@ -20,4 +20,10 @@ class APIClient {
     func getRegions() -> DataRequest {
         return request(APIClient.baseUrl.appendingPathComponent("/regions/list"), method: .get, headers: headers)
     }
+
+    struct Module: Cleanse.Module {
+        static func configure(binder: SingletonBinder) {
+            binder.bind().sharedInScope().to(factory: APIClient.init)
+        }
+    }
 }
