@@ -15,6 +15,9 @@ struct FoundationModule: Module {
 extension UserDefaults {
     struct Module: Cleanse.Module {
         static func configure(binder: SingletonBinder) {
+            binder.bind(UserDefaults.self).sharedInScope().to {
+                UserDefaults.standard
+            }
         }
     }
 }
