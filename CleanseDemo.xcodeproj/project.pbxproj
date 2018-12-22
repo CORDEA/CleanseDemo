@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4612527821CE3D3000771866 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4612527721CE3D3000771866 /* Alamofire.framework */; };
 		466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CAD21C5541600D189DF /* RxSwift.framework */; };
 		466C9CB021C618B900D189DF /* LoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C9CAF21C618B900D189DF /* LoginStore.swift */; };
 		466C9CB221C61BFB00D189DF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466C9CB121C61BFB00D189DF /* RxCocoa.framework */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4612527721CE3D3000771866 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		466C9CAD21C5541600D189DF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		466C9CAF21C618B900D189DF /* LoginStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
 		466C9CB121C61BFB00D189DF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4612527821CE3D3000771866 /* Alamofire.framework in Frameworks */,
 				466C9CB221C61BFB00D189DF /* RxCocoa.framework in Frameworks */,
 				466C9CAE21C5541600D189DF /* RxSwift.framework in Frameworks */,
 				4699508A21C4DC91004B37B8 /* Cleanse.framework in Frameworks */,
@@ -118,6 +121,7 @@
 		4699508821C4DC90004B37B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4612527721CE3D3000771866 /* Alamofire.framework */,
 				466C9CB121C61BFB00D189DF /* RxCocoa.framework */,
 				466C9CAD21C5541600D189DF /* RxSwift.framework */,
 				4699508921C4DC91004B37B8 /* Cleanse.framework */,
@@ -325,6 +329,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Cleanse.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -332,6 +337,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cleanse.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
