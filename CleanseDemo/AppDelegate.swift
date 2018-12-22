@@ -14,12 +14,13 @@ import Cleanse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var viewController: UIViewController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let injector = try! ComponentFactory.of(AppComponent.self).build(())
         injector.injectProperties(into: self)
         precondition(window != nil)
+        window!.rootViewController = viewController
         window!.makeKeyAndVisible()
         return true
     }
@@ -57,7 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func injectProperties(_ window: UIWindow) {
+    func injectProperties(_ window: UIWindow, _ viewController: TaggedProvider<UIViewController.Root>) {
         self.window = window
+        self.viewController = viewController.get()
     }
 }
