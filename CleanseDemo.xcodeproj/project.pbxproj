@@ -18,6 +18,7 @@
 		AF4142B61709D5D392B5C3CF /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CA719BAA67F514A589A /* MainTableViewDataSource.swift */; };
 		AF41430A7022E2772B817E07 /* ViewControllerScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CF2F52A83D0C8F39056 /* ViewControllerScope.swift */; };
 		AF414457CF021B3C36B2BBE2 /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41451C97AC70A8C637EC84 /* RepositoryModule.swift */; };
+		AF41458430042DF5EF76D5C8 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414A47F5D1B2B9BE5BF80C /* MainStore.swift */; };
 		AF414592DBF4D44CCABDFD74 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CE34CD68DFF8822EF8C /* MainViewController.swift */; };
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
 		AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */; };
@@ -86,6 +87,7 @@
 		AF4147F755EA35460E54316A /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDispatcher.swift; sourceTree = "<group>"; };
 		AF414A2180991897B4D3B8A0 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
+		AF414A47F5D1B2B9BE5BF80C /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 		AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDispatcher.swift; sourceTree = "<group>"; };
 		AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAppModule.swift; sourceTree = "<group>"; };
 		AF414BC85FAEEEE92B70B916 /* LoginNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */,
 				AF4145BAD33DBACF5C2DC798 /* MainActionCreator.swift */,
 				AF414207EE7F573EC10144A1 /* MainResult.swift */,
+				AF414A47F5D1B2B9BE5BF80C /* MainStore.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				AF414738BE48131D28FA22D0 /* MainDispatcher.swift in Sources */,
 				AF414C5B2A060B4D174B55D5 /* MainActionCreator.swift in Sources */,
 				AF414EF8F0FC0DE79311E23F /* MainResult.swift in Sources */,
+				AF41458430042DF5EF76D5C8 /* MainStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
