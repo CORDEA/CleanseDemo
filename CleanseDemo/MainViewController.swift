@@ -30,8 +30,22 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        store.onResult()
+                .subscribe(onNext: { [unowned self] in self.render(result: $0) })
+                .disposed(by: disposeBag)
 
         tableView.dataSource = dataSource
+        creator.initialize()
+    }
+
+    private func render(result: MainResult) {
+        switch result {
+        case .success(let regions):
+            dataSource.refreshItems(items: regions)
+            tableView.reloadData()
+        case .failure:
+            break
+        }
     }
 
     struct Module: Cleanse.Module {
