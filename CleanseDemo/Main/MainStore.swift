@@ -14,4 +14,15 @@ class MainStore {
         reader = source.reader
         self.repository = repository
     }
+
+    func onResult() -> Observable<MainResult> {
+        return reader.asObservable().flatMapFirst { [unowned self] action -> Observable<MainResult> in
+            switch action {
+            case .initialize:
+                return self.repository.getRegions().ifEmpty(default: []).map { regions -> MainResult in
+                    .success(regions: regions)
+                }.asObservable()
+            }
+        }
+    }
 }
