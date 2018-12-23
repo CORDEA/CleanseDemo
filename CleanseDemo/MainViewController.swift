@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import RxSwift
 import Cleanse
 
 class MainViewController: UIViewController {
@@ -11,9 +12,14 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     private let dataSource: MainTableViewDataSource
+    private let creator: MainActionCreator
+    private let store: MainStore
+    private let disposeBag = DisposeBag()
 
-    init(dataSource: MainTableViewDataSource) {
+    init(dataSource: MainTableViewDataSource, creator: MainActionCreator, store: MainStore) {
         self.dataSource = dataSource
+        self.creator = creator
+        self.store = store
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -29,8 +35,18 @@ class MainViewController: UIViewController {
     }
 
     struct Module: Cleanse.Module {
-        static func configure(binder: Binder<Unscoped>) {
+        static func configure(binder: SingletonBinder) {
             binder.include(module: MainTableViewDataSource.Module.self)
+
+            binder.bind()
+                    .sharedInScope()
+                    .to(factory: MainDispatcher.init)
+            binder.bind().to(factory: { (dispatcher: MainDispatcher) in
+                MainActionCreator(sink: dispatcher)
+            })
+            binder.bind().to(factory: { (dispatcher: MainDispatcher, repository: MainRepository) in
+                MainStore(source: dispatcher, repository: repository)
+            })
 
             binder.bind().to(factory: MainViewController.init)
             binder.bind().tagged(with: UINavigationController.Root.self).to { (root: MainViewController) in
