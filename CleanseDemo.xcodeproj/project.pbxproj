@@ -22,6 +22,7 @@
 		AF414598A325C0572AC029A5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4147F755EA35460E54316A /* AppComponent.swift */; };
 		AF41465252BE0089BCF34F82 /* LoginActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4140B53488E4D31729D5C1 /* LoginActionCreator.swift */; };
 		AF4146C4318FF8F9889349C8 /* CleanseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414FD24DD7595463A8F5DD /* CleanseDemoUITests.swift */; };
+		AF414738BE48131D28FA22D0 /* MainDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */; };
 		AF41474CAF47D1248BBF1501 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414C00CB8698788D58D1E2 /* MainAction.swift */; };
 		AF41485228C6BBC18F6AEC90 /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414BC85FAEEEE92B70B916 /* LoginNavigator.swift */; };
 		AF4148F11B5A5B916215C3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF414571F5D3E9A02AF4334A /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		AF4146D20AA4FE49E28C1A39 /* MainRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
 		AF4146EB580B804042A44649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4147F755EA35460E54316A /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDispatcher.swift; sourceTree = "<group>"; };
 		AF414A2180991897B4D3B8A0 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
 		AF414A50AFCC313AA759CE5C /* LoginDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDispatcher.swift; sourceTree = "<group>"; };
 		AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAppModule.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				AF4146D20AA4FE49E28C1A39 /* MainRepository.swift */,
 				AF414C00CB8698788D58D1E2 /* MainAction.swift */,
+				AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				AF414457CF021B3C36B2BBE2 /* RepositoryModule.swift in Sources */,
 				AF4149CB1696094DAB6AAFCD /* MainRepository.swift in Sources */,
 				AF41474CAF47D1248BBF1501 /* MainAction.swift in Sources */,
+				AF414738BE48131D28FA22D0 /* MainDispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
