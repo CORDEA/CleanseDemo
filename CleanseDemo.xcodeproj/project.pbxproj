@@ -38,6 +38,7 @@
 		AF414C7CD525147B72D15518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414F011A484663C660609D /* LoginViewController.swift */; };
 		AF414CB765313A1B11D2EA0F /* CoreAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414B77CD29D8FBC5172CBB /* CoreAppModule.swift */; };
 		AF414DF332AE717DDCDF5F50 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4141DA2A0B12B3379027CB /* Region.swift */; };
+		AF414EF8F0FC0DE79311E23F /* MainResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414207EE7F573EC10144A1 /* MainResult.swift */; };
 		AF414F10D8F65EF8FCADD7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF414CCC0B50062CD2A9CAA6 /* AppDelegate.swift */; };
 		AF414F787FED064DBFF1EF29 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41419363C717C6AC17035D /* LoginResult.swift */; };
 		AF414FDFD8E2A9E6508B91CF /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41426AB51E38B2BCE942A9 /* LoginAction.swift */; };
@@ -72,6 +73,7 @@
 		AF4140BCE2FF1CEF0A283900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		AF41419363C717C6AC17035D /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		AF4141DA2A0B12B3379027CB /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		AF414207EE7F573EC10144A1 /* MainResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainResult.swift; sourceTree = "<group>"; };
 		AF41426AB51E38B2BCE942A9 /* LoginAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
 		AF414338756A8C3F820A2BDF /* CleanseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF41448B9F9C1090DF941A20 /* FoundationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationModule.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				AF414C00CB8698788D58D1E2 /* MainAction.swift */,
 				AF41489509EEFAA51D72EC1B /* MainDispatcher.swift */,
 				AF4145BAD33DBACF5C2DC798 /* MainActionCreator.swift */,
+				AF414207EE7F573EC10144A1 /* MainResult.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				AF41474CAF47D1248BBF1501 /* MainAction.swift in Sources */,
 				AF414738BE48131D28FA22D0 /* MainDispatcher.swift in Sources */,
 				AF414C5B2A060B4D174B55D5 /* MainActionCreator.swift in Sources */,
+				AF414EF8F0FC0DE79311E23F /* MainResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
